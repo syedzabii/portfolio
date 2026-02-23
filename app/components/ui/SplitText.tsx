@@ -54,20 +54,16 @@ export default function SplitText({
         letters.length,
         letters.map((_, i) => ({
             from: animationFrom,
-            to: inView
-                ? async (next: (val: Record<string, string | number>) => Promise<void>) => {
-                    await next(animationTo);
-                    animatedCount.current += 1;
-                    if (
-                        animatedCount.current === letters.length &&
-                        onLetterAnimationComplete
-                    ) {
-                        onLetterAnimationComplete();
-                    }
-                }
-                : animationFrom,
+            to: inView ? animationTo : animationFrom,
             delay: i * delay,
             config: { tension: 80, friction: 20 },
+            onRest: () => {
+                if (!inView) return;
+                animatedCount.current += 1;
+                if (animatedCount.current === letters.length && onLetterAnimationComplete) {
+                    onLetterAnimationComplete();
+                }
+            },
         }))
     );
 
