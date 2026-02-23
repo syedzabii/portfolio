@@ -1,0 +1,289 @@
+{
+    "portfolio": {
+      "theme": {
+        "colors": {
+          "background": "#000000",
+          "text": {
+            "primary": "#ffffff",
+            "secondary": "#cccccc",
+            "accent": "#4a9eff"
+          },
+          "border": "#333333"
+        },
+        "typography": {
+          "fontFamily": "Inter, sans-serif",
+          "sizes": {
+            "hero": "3.5rem",
+            "heading": "2.5rem",
+            "subheading": "1.5rem",
+            "body": "1rem",
+            "small": "0.875rem"
+          },
+          "weights": {
+            "bold": 700,
+            "medium": 500,
+            "regular": 400
+          }
+        },
+        "spacing": {
+          "section": "4rem",
+          "container": "2rem",
+          "element": "1rem"
+        }
+      },
+      "navigation": {
+        "items": [
+          { "label": "Home", "href": "#home" },
+          { "label": "Work", "href": "#work" },
+          { "label": "Skills", "href": "#skills" },
+          { "label": "Awards", "href": "#awards" },
+          { "label": "Projects", "href": "#projects" }
+        ],
+        "position": "top-right",
+        "style": "minimal"
+      },
+      "hero": {
+        "name": "Yash Thakur",
+        "tagline": "Building cool things",
+        "description": "Open to opportunities, freelance work, and collaborations.",
+        "contact": {
+          "email": "yashthakur0526@gmail.com",
+          "twitter": "Find me on Twitter to connect."
+        },
+        "profileImage": {
+          "src": "profile-image.jpg",
+          "alt": "Yash Thakur Profile",
+          "position": "right"
+        },
+        "socialLinks": [
+          { "platform": "github", "icon": "github", "href": "#" },
+          { "platform": "twitter", "icon": "x", "href": "#" },
+          { "platform": "linkedin", "icon": "linkedin", "href": "#" },
+          { "platform": "other", "icon": "link", "href": "#" }
+        ]
+      },
+      "workExperience": {
+        "title": "Work Experience",
+        "positions": [
+          {
+            "company": "Stealth Startup",
+            "role": "Full Stack Engineering Intern",
+            "type": "Remote",
+            "duration": "March 2025 - May 2025",
+            "responsibilities": [
+              "Architecting & developing a full-stack MVP from scratch, designing scalable system architecture and implementing backend, frontend, and mobile applications for seamless cross-platform functionality.",
+              "Integrating a core Machine Learning algorithm into the system, optimizing data flow, model deployment, and API interactions to enhance product intelligence.",
+              "Leading end-to-end development, managing backend services, frontend interfaces, API integrations, and cloud deployment to ensure a high-performance, scalable, and production-ready solution."
+            ],
+            "technologies": ["FastAPI", "NextJS", "React-Native", "Python", "Machine Learning", "Postgres"]
+          },
+          {
+            "company": "Cogent Web Services",
+            "role": "Software Developer Intern",
+            "type": "Remote",
+            "duration": "November 2023 - April 2024",
+            "responsibilities": [
+              "Delivered high availability and scalability for RESTful APIs.",
+              "Improved API response efficiency by 25% and reduced downtime by 15%.",
+              "Achieved these results by developing with Node.js and Express, integrating Flutter for mobile applications, and applying Agile practices for effective project management."
+            ],
+            "technologies": ["Node.js", "Express", "React", "RESTful API", "Flutter"]
+          },
+          {
+            "company": "Aquaria Solutions",
+            "role": "Software Developer Intern",
+            "type": "Remote",
+            "duration": "April 2023 - August 2023",
+            "responsibilities": [
+              "Achieved significant improvements in web application performance and delivery rate.",
+              "Performance increased by 40%, and delivery rate enhanced by 30%.",
+              "Accomplished this through end-to-end development using Flutter and React, combined with Agile methodologies to streamline processes."
+            ],
+            "technologies": ["Flutter", "React", "Firebase", "Java", "REST API"]
+          }
+        ]
+      },
+      "skills": {
+        "title": "Skills",
+        "categories": [
+          {
+            "name": "Frontend",
+            "items": ["NextJS", "React", "TypeScript", "Javascript"]
+          },
+          {
+            "name": "Backend",
+            "items": ["FastAPI", "NodeJS", "Python", "Java"]
+          },
+          {
+            "name": "Database",
+            "items": ["PostgreSQL", "MongoDB"]
+          },
+          {
+            "name": "Tools & Cloud",
+            "items": ["Github", "Docker", "AWS"]
+          }
+        ]
+      },
+      "awards": {
+        "title": "Awards and Achievements",
+        "items": [
+          {
+            "title": "Published paper in 5th International Conference on Computational Vision and Bio-Inspired Computing (ICCVBIC-2021)",
+            "description": "Predictive Analysis Model for Mental Health",
+            "type": "academic",
+            "year": "2021"
+          },
+          {
+            "title": "NPTEL Python Certified",
+            "description": "Certified in Python programming through NPTEL",
+            "type": "certification",
+            "year": "2021"
+          },
+          {
+            "title": "The Growth Driver",
+            "description": "Acknowledged by clients for delivering high-quality products contributing to business growth",
+            "type": "recognition",
+            "year": "2023"
+          },
+          {
+            "title": "Client Value Creation",
+            "description": "Awarded for delivering work that added substantial value to the client",
+            "type": "award",
+            "year": "2023"
+          },
+          {
+            "title": "Best People with Great Bonding",
+            "description": "Appreciated by teammates for fostering a positive and collaborative work environment",
+            "type": "recognition",
+            "year": "2023"
+          }
+        ]
+      },
+      "projects": {
+        "title": "Projects",
+        "showAll": true,
+        "items": [
+          {
+            "name": "Resume-AI",
+            "description": "Resume-AI is an AI-powered agent that customizes your resume to match any job description, making job applications faster and more effective.",
+            "technologies": ["NextJS", "FastAPI", "PostgreSQL", "Langchain", "Gemini AI"],
+            "links": {
+              "github": "#",
+              "live": "#"
+            }
+          },
+          {
+            "name": "Test.ai",
+            "description": "Test.ai is an AI-driven platform that personalizes quizzes, provides real-time feedback, and tailors recommendations to enhance learning.",
+            "technologies": ["NextJS", "Gemini AI", "MongoDB"],
+            "links": {
+              "github": "#",
+              "live": "#"
+            }
+          },
+          {
+            "name": "Gitbot (like CodeRabbit)",
+            "description": "Gitbot is an AI-powered GitHub Assistant that automates Q&A, analyzes issues, and reviews and summarizes pull requests. It is designed for modularity, production-readiness, and easy extensibility.",
+            "technologies": ["FastAPI", "LangChain", "ChromaDB", "Gemini LLM", "Python"],
+            "links": {
+              "github": "#",
+              "live": "#"
+            }
+          },
+          {
+            "name": "MemoryMind Chat",
+            "description": "AI chat application with MCP (Model Context Protocol) to create memory-aware conversations. The AI remembers facts about users across sessions and provides personalized responses using proper MCP protocol implementation.",
+            "technologies": ["NextJS", "MCP Server", "Postgres", "Langchain", "Gemini", "Redis"],
+            "links": {
+              "github": "#",
+              "live": "#"
+            }
+          }
+        ]
+      },
+      "layout": {
+        "sections": [
+          {
+            "id": "hero",
+            "component": "hero",
+            "fullWidth": true,
+            "padding": "large"
+          },
+          {
+            "id": "work",
+            "component": "workExperience",
+            "fullWidth": false,
+            "padding": "large"
+          },
+          {
+            "id": "skills",
+            "component": "skills",
+            "fullWidth": false,
+            "padding": "medium"
+          },
+          {
+            "id": "awards",
+            "component": "awards",
+            "fullWidth": false,
+            "padding": "medium"
+          },
+          {
+            "id": "projects",
+            "component": "projects",
+            "fullWidth": false,
+            "padding": "large"
+          }
+        ],
+        "container": {
+          "maxWidth": "1200px",
+          "margin": "0 auto",
+          "padding": "0 2rem"
+        }
+      },
+      "components": {
+        "workExperience": {
+          "layout": "vertical",
+          "showDuration": true,
+          "showLocation": true,
+          "highlightCurrent": false
+        },
+        "projects": {
+          "layout": "grid",
+          "columns": 1,
+          "showTechnologies": true,
+          "showLinks": true
+        },
+        "skills": {
+          "layout": "tags",
+          "groupByCategory": false,
+          "showIcons": false
+        },
+        "awards": {
+          "layout": "cards",
+          "showYear": true,
+          "showType": true,
+          "groupByType": false
+        }
+      },
+      "animations": {
+        "enabled": true,
+        "transitions": {
+          "duration": "0.3s",
+          "easing": "ease-in-out"
+        },
+        "hover": {
+          "enabled": true,
+          "effects": ["scale", "glow"]
+        }
+      },
+      "responsive": {
+        "breakpoints": {
+          "mobile": "768px",
+          "tablet": "1024px",
+          "desktop": "1200px"
+        },
+        "adaptiveLayout": true,
+        "mobileFirst": true
+      }
+    }
+  }

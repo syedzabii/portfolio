@@ -1,0 +1,270 @@
+{
+    "portfolio": {
+      "theme": {
+        "colors": {
+          "background": "#000000",
+          "text": {
+            "primary": "#ffffff",
+            "secondary": "#cccccc",
+            "accent": "#4a9eff"
+          },
+          "border": "#333333"
+        },
+        "typography": {
+          "fontFamily": "Inter, sans-serif",
+          "sizes": {
+            "hero": "3.5rem",
+            "heading": "2.5rem",
+            "subheading": "1.5rem",
+            "body": "1rem",
+            "small": "0.875rem"
+          },
+          "weights": {
+            "bold": 700,
+            "medium": 500,
+            "regular": 400
+          }
+        },
+        "spacing": {
+          "section": "4rem",
+          "container": "2rem",
+          "element": "1rem"
+        }
+      },
+      "navigation": {
+        "items": [
+          { "label": "Home", "href": "#home" },
+          { "label": "Experience", "href": "#work" },
+          { "label": "Skills", "href": "#skills" },
+          { "label": "Awards", "href": "#awards" },
+          { "label": "Projects", "href": "#projects" }
+        ],
+        "position": "top-right",
+        "style": "minimal"
+      },
+      "hero": {
+        "name": "Syed Ismail Zabiulla",
+        "tagline": "Full Stack Developer",
+        "description": "Building modern web applications with Next.js, Node.js, and cloud technologies.",
+        "contact": {
+          "email": "syedismailgp@gmail.com",
+          "phone": "+91 (953) 820-2240",
+          "location": "Bengaluru, Karnataka India"
+        },
+        "profileImage": {
+          "src": "profile-image.jpg",
+          "alt": "Syed Ismail Zabiulla Profile",
+          "position": "right"
+        },
+                 "socialLinks": [
+           { "platform": "github", "icon": "github", "href": "https://github.com/syedzabii" },
+           { "platform": "linkedin", "icon": "linkedin", "href": "https://www.linkedin.com/in/syd-ismail" }
+         ]
+      },
+      "workExperience": {
+        "title": "Experience",
+        "positions": [
+          {
+            "company": "Torry Harris",
+            "role": "Full Stack Engineer",
+            "type": "Bengaluru",
+            "duration": "2024 - Present",
+            "responsibilities": [
+              "Full-stack development with React.js and TypeScript",
+              "Built modular HTTP client improving API efficiency by 40%",
+              "Implemented Auth0 authentication and Redux state management"
+            ],
+            "technologies": ["React.js", "TypeScript", "Auth0", "Redux"]
+          },
+          {
+            "company": "L&T Technology Services",
+            "role": "Software Engineer",
+            "type": "Mysore",
+            "duration": "2022 - 2024",
+            "responsibilities": [
+              "Improved app performance by 30% using React hooks",
+              "Built Node.js backend with Express.js and MySQL",
+              "Implemented SSO authentication system"
+            ],
+            "technologies": ["React.js", "Node.js", "Express.js", "MySQL"]
+          },
+          {
+            "company": "L&T Technology Services",
+            "role": "Associate Engineer",
+            "type": "Mysuru",
+            "duration": "2021 - 2022",
+            "responsibilities": [
+              "Developed microservices with Spring Boot",
+              "Implemented JUnit testing with Mockito",
+              "Containerized applications with Docker"
+            ],
+            "technologies": ["Java", "Spring Boot", "Docker"]
+          }
+        ]
+      },
+      "skills": {
+        "title": "Skills",
+        "categories": [
+          {
+            "name": "Languages",
+            "items": ["TypeScript", "JavaScript", "Java", "Python"]
+          },
+          {
+            "name": "Frontend",
+            "items": ["React.js", "Next.js", "Tailwind CSS", "Redux"]
+          },
+          {
+            "name": "Backend",
+            "items": ["Node.js", "Express.js", "Spring Boot", "MongoDB", "MySQL"]
+          },
+          {
+            "name": "Tools",
+            "items": ["Docker", "Git", "AWS", "Google Cloud"]
+          }
+        ]
+      },
+      "awards": {
+        "title": "Awards",
+        "items": [
+          {
+            "title": "Published Research Paper",
+            "description": "Predictive Analysis Model for Mental Health - ICCVBIC-2021",
+            "type": "academic",
+            "year": "2021",
+            "link": "https://link.springer.com/chapter/10.1007/978-981-16-9573-5_54"
+          },
+          {
+            "title": "NPTEL Python Certified",
+            "description": "Python programming certification",
+            "type": "certification",
+            "year": "2021"
+          },
+          {
+            "title": "Growth Driver Award",
+            "description": "Client recognition for high-quality deliverables",
+            "type": "recognition",
+            "year": "2023"
+          }
+        ]
+      },
+              "projects": {
+          "title": "Projects",
+          "subtitle": "Featured Project",
+          "showAll": true,
+          "items": [
+            {
+              "name": "NextGrab",
+              "description": "Food waste reduction platform with vendor dashboard, admin panel, and mobile app. Built with Next.js, Node.js, and cloud services.",
+              "features": [
+                {
+                  "title": "Landing Page",
+                  "description": "Next.js with Framer Motion animations"
+                },
+                {
+                  "title": "Vendor Dashboard",
+                  "description": "Store management and analytics"
+                },
+                {
+                  "title": "Admin Panel",
+                  "description": "Comprehensive insights and revenue tracking"
+                },
+                {
+                  "title": "Backend",
+                  "description": "Node.js/Express.js with Firebase auth and Stripe payments"
+                }
+              ],
+              "technologies": ["Next.js", "React.js", "Node.js", "MongoDB", "Firebase", "Stripe"],
+                             "links": {
+                 "github": "#",
+                 "live": "https://nextgrab.co/"
+               },
+              "image": "nextgrab-app.png"
+            }
+          ]
+        },
+      "layout": {
+        "sections": [
+          {
+            "id": "hero",
+            "component": "hero",
+            "fullWidth": true,
+            "padding": "large"
+          },
+          {
+            "id": "work",
+            "component": "workExperience",
+            "fullWidth": false,
+            "padding": "large"
+          },
+          {
+            "id": "skills",
+            "component": "skills",
+            "fullWidth": false,
+            "padding": "medium"
+          },
+          {
+            "id": "awards",
+            "component": "awards",
+            "fullWidth": false,
+            "padding": "medium"
+          },
+          {
+            "id": "projects",
+            "component": "projects",
+            "fullWidth": false,
+            "padding": "large"
+          }
+        ],
+        "container": {
+          "maxWidth": "1200px",
+          "margin": "0 auto",
+          "padding": "0 2rem"
+        }
+      },
+      "components": {
+        "workExperience": {
+          "layout": "vertical",
+          "showDuration": true,
+          "showLocation": true,
+          "highlightCurrent": false
+        },
+        "projects": {
+          "layout": "grid",
+          "columns": 1,
+          "showTechnologies": true,
+          "showLinks": true
+        },
+        "skills": {
+          "layout": "tags",
+          "groupByCategory": true,
+          "showIcons": false
+        },
+        "awards": {
+          "layout": "cards",
+          "showYear": true,
+          "showType": true,
+          "groupByType": false
+        }
+      },
+      "animations": {
+        "enabled": true,
+        "transitions": {
+          "duration": "0.3s",
+          "easing": "ease-in-out"
+        },
+        "hover": {
+          "enabled": true,
+          "effects": ["scale", "glow"]
+        }
+      },
+      "responsive": {
+        "breakpoints": {
+          "mobile": "768px",
+          "tablet": "1024px",
+          "desktop": "1200px"
+        },
+        "adaptiveLayout": true,
+        "mobileFirst": true
+      }
+    }
+  }
