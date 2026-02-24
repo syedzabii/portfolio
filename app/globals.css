@@ -423,7 +423,7 @@ body {
 
 .exp-bullet {
   font-size: 0.85rem;
-  color: var(--text-muted);
+  color: var(--text-secondary);
   padding-left: 1rem;
   position: relative;
 }
@@ -432,7 +432,7 @@ body {
   content: '—';
   position: absolute;
   left: 0;
-  color: var(--text-muted);
+  color: var(--text-secondary);
 }
 
 .exp-tags {
@@ -561,17 +561,17 @@ body {
 /* --- PROJECTS SECTION --- */
 .projects-section {
   padding: 6rem 2rem;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   border-top: 1px solid var(--border);
 }
 
 .project-card {
-  padding: 3rem 0;
+  padding: 4rem 0;
   border-bottom: 1px solid var(--border);
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 5rem;
   align-items: center;
 }
 
@@ -662,12 +662,104 @@ body {
   opacity: 0.85;
 }
 
+.project-store-btns {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.project-store-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  background: #ffffff;
+  color: #000000;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid #ffffff;
+}
+
+.project-store-btn:hover {
+  background: transparent;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+}
+
+.project-store-btn.secondary {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid var(--border-light);
+}
+
+.project-store-btn.secondary:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: #ffffff;
+}
+
+.project-store-btn svg,
+.project-store-btn img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.project-store-btn:hover svg,
+.project-store-btn:hover img {
+  filter: invert(0);
+}
+
+/* For images in white buttons that need to be black */
+.project-store-btn img {
+  filter: brightness(0);
+}
+
+.project-store-btn:hover img {
+  filter: brightness(1) invert(1);
+}
+
+.project-store-caption {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 1rem;
+  font-weight: 400;
+}
+
 .project-image-wrapper {
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   overflow: hidden;
-  background: #111;
-  aspect-ratio: 4/3;
+  background: #080808;
+  aspect-ratio: 16/10;
   position: relative;
+  border: 1px solid var(--border);
+  box-shadow: 0 40px 100px -20px rgba(0, 0, 0, 0.7);
+}
+
+.project-image-inner {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-image {
+  object-fit: contain !important;
+  border-radius: 0.5rem;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.04) translateY(-5px);
 }
 
 /* --- FOOTER --- */

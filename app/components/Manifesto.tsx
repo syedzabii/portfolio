@@ -23,7 +23,7 @@ export default function Manifesto() {
                         <p className="manifesto-text" style={{ marginTop: '1.5rem' }}>
                             I build full-stack applications that are fast, clean, and built
                             for the long run — from vendor dashboards to mobile-first experiences.
-                            Three years in, I still care about the craft.
+                            Four years in, I still care about the craft.
                         </p>
                         <a
                             href="https://github.com/syedzabii"
